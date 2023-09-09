@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Abhishekh</<span><br></h1>
+                <p>UI/UX Designer </p>
+                <p>Front Developer</p> 
+                
+            </div>
+        </div>
+    </div>
+    <!-- ----------ABOUT---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/snap.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I'm a front end developer, UI/UX designer, and Python developer .I have strong       
+                        understanding of web technologies and is proficient in a variety of programming languages and frameworks. I am also a creative thinker and is able to come up with innovative solutions to problems.</P>
+                        <P>I worked on a variety of projects, including websites. I also experienced in working with a variety of clients and has a proven track record of success.</P>
+                        <P>I'm highly motivated and results-oriented individual who is always looking for new challenges. I am also a team player and able to work effectively with others.</P>
+                        <P>If you are looking for a talented and experienced front end developer, UI/UX designer, or Python developer, then Abhishekh is the perfect candidate for you.</p>
+                        <h1 class="sub-title">Accomplishment</h1>
+                        <P>Developed and maintained the Acme Corporation website</p>
+
+
+                            <P>Proficient in a variety of front-end technologies, including HTML, CSS, JavaScript, and Vue
+                                Skilled in UI/UX design principles and practices.</p>
+                                
+                                
+                                <P>Highly motivated and results-oriented.Team player</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------CONTACT---------- -->bz 
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    
+                    <div class="social-icons">
+                        <a href="https://twitter.com/AbhishekhB69781"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/ab.x.bi/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/abhishekh-bihari-5532ba250/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // JavaScript for handling the mobile navigation menu
+        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        document.querySelector('.fas.fa-times').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.remove('show');
+        });
+
+    </script>
+</body>
+
+</html>
